@@ -1,29 +1,31 @@
 import React, { useEffect, useState } from "react";
+import { baseURL } from "../../common/url";
 import "./rightbar.css";
 
 function Rightbar(props: any) {
   const [listTag, setlistTag] = useState<Array<string>>([]);
-  const baseURL = "https://api.realworld.io";
   useEffect(() => {
     fetch(`${baseURL}/api/tags`)
       .then((response) => response.json())
       .then((data) => setlistTag(data.tags as Array<string>));
   }, []);
-  console.log("list", listTag);
+  // console.log("list", listTag);
+  // console.log("baseURL", baseURL);
 
   return (
-    <div className="Rightbar">
-      Rightbar
+    <div className="RightbarContainer">
+      <div className="rightbar_menu">
+        <div className="search">search</div>
+        <div className="noti">noti</div>
+        <div className="upload">upload</div>
+        <div className="lightmod">lightmod</div>
+      </div>
       <div className="RightbarTag">
-        <div className="itemTag">itemTag</div>
         {listTag.map((item, key) => (
           <div key={key} className="itemTag">
-            {item}
+            #{item}
           </div>
         ))}
-        <div className="itemTag">itemTag</div>
-        <div className="itemTag">itemTag</div>
-        <div className="itemTag">itemTag</div>
       </div>
     </div>
   );
