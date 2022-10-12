@@ -1,0 +1,65 @@
+.menuItem {
+    height: 36px;
+    line-height: 36px;
+    padding: 16px 16px 16px 32px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    font-size: 20px;
+    font-weight: 800;
+    color: #A4B6E1;
+    transition: all 1s;
+}
+
+.menuItem:hover {
+    transition: all 1s;
+    color: #A974FF;
+    box-shadow: #A4B6E1 0px 13px 27px -5px, #99a7c9 0px 8px 16px -8px;
+}
+
+.active {
+    color: #A974FF;
+    box-shadow: #A4B6E1 0px 13px 27px -5px, #99a7c9 0px 8px 16px -8px;
+}
+
+.icon_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_app {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A974FF;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.menu {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+.account {
+    padding: 16px 16px 16px 32px;
+}
+
+.account_detail {
+    padding: 16px 16px 16px 32px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.img_acc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

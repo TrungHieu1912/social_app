@@ -1,0 +1,96 @@
+.container_main {
+    margin-top: 50px;
+    height: 90vh;
+    border-right: 2px solid #D8E4F2;
+    padding: 0 50px;
+}
+
+.FeedBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.FeedItem {
+    margin: 20px 0px;
+}
+
+.menu_feeds {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feed_tit {
+    font-weight: bold;
+}
+
+.item_feeds {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #A4B6E1;
+    cursor: pointer;
+}
+
+.item_feeds:hover {
+    color: #A974FF;
+}
+
+.active_item_feeds {
+    color: #A974FF;
+}
+
+.FeedList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+}
+
+.detailInfor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2px;
+}
+
+.detailFeed {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 250px;
+    padding: 16px 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.detailFeed:hover {
+    transition: all 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.user_like, .user_comment, .user_img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user_like, .user_comment {
+    margin-left: 40px;
+    transition: all 0.5s;
+}
+
+.like_cmt {
+    display: flex;
+}
+
+.user_comment:hover {
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.user_like:hover {
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    color: red;
+    transition: all 0.5s;
+}

@@ -1,0 +1,26 @@
+.main_container {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    background-color: #fff;
+    height: 100vh
+}
+
+.Topbar {
+    /* background-color: #1262ec; */
+    /* background-color: #F7FAFF; */
+    border-bottom: 1px solid #D8E4F2;
+    height: 100px;
+}
+
+.Sidebar {
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.Rightbar {
+    background-color: #F7FAFF;
+}
+
+.Feed {
+    background-color: #F7FAFF;
+}

@@ -44,3 +44,21 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+src
+|** reducers
+| |** hobby.js
+| |** todo.js
+| |** ... (one reducer per file)
+| |** index.js (root reducer)
+|
+|** actions
+| |** hobby.js
+| |** todo.js
+| |** ...
+|
+|** pages
+| |** HomePage/index.jsx (connect to redux)
+|
+|** store.js (reducers, init state, middlewares)
+|\_\_ index.js (setup Store Provider)

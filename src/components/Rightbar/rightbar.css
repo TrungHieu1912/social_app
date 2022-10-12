@@ -1,0 +1,18 @@
+.RightbarTag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.Rightbar {
+    padding: 50px;
+}
+
+.itemTag {
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
