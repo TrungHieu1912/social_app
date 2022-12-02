@@ -3,14 +3,13 @@ import { baseURL } from "../../common/url";
 import "./rightbar.css";
 
 function Rightbar(props: any) {
+  const { chooseTag, tag } = props;
   const [listTag, setlistTag] = useState<Array<string>>([]);
   useEffect(() => {
     fetch(`${baseURL}/api/tags`)
       .then((response) => response.json())
       .then((data) => setlistTag(data.tags as Array<string>));
   }, []);
-  // console.log("list", listTag);
-  // console.log("baseURL", baseURL);
 
   return (
     <div className="RightbarContainer">
@@ -22,7 +21,7 @@ function Rightbar(props: any) {
       </div>
       <div className="RightbarTag">
         {listTag.map((item, key) => (
-          <div key={key} className="itemTag">
+          <div key={key} className={tag === item ? 'activeTag itemTag' : 'itemTag'} onClick={() => chooseTag(item)}>
             #{item}
           </div>
         ))}

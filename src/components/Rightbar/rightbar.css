@@ -37,3 +37,7 @@
     height: 100px;
     border-bottom: 1px solid #ccc;
 }
+.activeTag{
+    background-color:  #A974FF;
+    color: white;
+}

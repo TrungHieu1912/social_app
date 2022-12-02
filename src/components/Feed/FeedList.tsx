@@ -17,15 +17,10 @@ interface ArticlesInterface {
   updatedAt: any;
 }
 function FeedList(props: any) {
-  const { statusFilter } = props;
-  console.log("statusFilter", statusFilter);
+  const { statusFilter, listArticles } = props;
+  // console.log("statusFilter", statusFilter);
 
-  const [listArticles, setListArticles] = useState([]);
-  useEffect(() => {
-    fetch(`${baseURL}/api/articles?limit=20&offset=0`)
-      .then((response) => response.json())
-      .then((data) => setListArticles(data.articles));
-  }, []);
+
   // console.log("listArticles", listArticles);
 
   return (
